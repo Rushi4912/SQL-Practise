@@ -3,7 +3,7 @@ import { getClient } from "./utils";
 async function getUsers() {
     const client = await getClient();
     
-    const selectUsersText = 'SELECT * FROM users WHERE user = $1';
+    const selectUsersText = 'SELECT * FROM users';
     const userRes = await client.query(selectUsersText);
     
     console.log("Users:");
