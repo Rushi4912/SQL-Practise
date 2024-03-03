@@ -4,7 +4,7 @@ async function getUsers() {
     const client = await getClient();
     
     const selectUsersText = 'SELECT * FROM users';
-    let user = await client.query(selectUsersText);
+    // let user = await client.query(selectUsersText);
 
     const userRes = await client.query(selectUsersText);
     
