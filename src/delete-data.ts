@@ -9,5 +9,5 @@ async function deleteTodo(todoId: number) {
     console.log(`Todo with ID ${todoId} deleted!`);
 }
 
-// const todoIdToDelete = 1;
-// deleteTodo(todoIdToDelete);
+const todoIdToDelete = 1;
+deleteTodo(todoIdToDelete);
