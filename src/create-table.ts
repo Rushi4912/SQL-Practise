@@ -13,14 +13,14 @@ async function createTable() {
 
     await client.query(createUserTableQuery);
 
-    // const createTodosQuery = `
-    //     CREATE TABLE todos (
-    //         id SERIAL PRIMARY KEY,
-    //         title TEXT NOT NULL,
-    //         description TEXT,
-    //         user_id INTEGER REFERENCES users(id),
-    //         done BOOLEAN DEFAULT FALSE
-    //     );
+    const createTodosQuery = `
+        CREATE TABLE todos (
+            id SERIAL PRIMARY KEY,
+            title TEXT NOT NULL,
+            description TEXT,
+            user_id INTEGER REFERENCES users(id),
+            done BOOLEAN DEFAULT FALSE
+        );
     `;
 
 
